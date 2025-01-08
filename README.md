@@ -27,4 +27,72 @@ Image Extraction:
 
 Images are extracted from PDFs using PyMuPDF (fitz), enabling visualization of embedded media.
 
+Installation
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/your-repo/ask-your-pdf.git
+cd ask-your-pdf
+Install dependencies:
+
+bash
+Copy code
+pip install -r requirements.txt
+Set up Google Generative AI credentials:
+
+Place the service account JSON key file in the specified path.
+Ensure the file has proper access to the Generative Language API with the required scopes.
+Create a .env file to load environment variables:
+
+env
+Copy code
+GOOGLE_API_KEY=<Your Google API Key>
+Run the app:
+
+bash
+Copy code
+streamlit run app.py
+Usage
+Upload PDFs:
+
+Use the sidebar to upload one or multiple PDFs.
+Click Process PDFs to extract and store the text.
+Ask Questions:
+
+Enter your question in the input box and click Submit.
+The app retrieves the most relevant text segments and generates a detailed response.
+Extract Images:
+
+Click Extract Images in the sidebar to view images from the uploaded PDFs.
+Key Components
+Google Generative AI:
+
+Provides embeddings for text processing and a conversational model for answering queries.
+Requires appropriate service account credentials for access.
+FAISS Vector Store:
+
+Enables efficient semantic searches on large datasets of text chunks.
+Streamlit:
+
+Powers the interactive web app interface.
+PyMuPDF (fitz):
+
+Extracts images embedded within PDFs.
+PyPDF2:
+
+Handles PDF text extraction.
+Customization
+Styling: Modify the Streamlit layout and colors in the st.markdown block.
+Prompt Template: Update the question-answering prompt for different use cases.
+Chunking: Adjust chunk_size and chunk_overlap in RecursiveCharacterTextSplitter for different text granularity.
+Limitations
+Embedding Size: Large PDFs may require significant storage and computation for embeddings.
+Model Access: Dependent on Google Generative AI availability and quotas.
+PDF Structure: Inconsistent formatting in PDFs can affect text extraction quality.
+Future Enhancements
+Add support for more file formats (e.g., Word, Excel).
+Integrate other embedding and QA models for comparison.
+Implement a search bar for manual exploration of processed documents.
+
 [Virtual Environment files (Too large to push in Github Repository)]
