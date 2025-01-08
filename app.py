@@ -16,7 +16,8 @@ from google.auth.transport.requests import Request
 from google.oauth2 import service_account
 
 # Path to the new service account key file
-key_path = r"C:\Users\MAYANK\Documents\gen-lang-client-0577170796-eaf471f35885.json"
+key_path = r"GOOGLE API KEY PATH"
+#API key hidden due to security reasons
 
 # Correct scopes for Generative Language API
 scopes = ["https://www.googleapis.com/auth/generative-language"]
