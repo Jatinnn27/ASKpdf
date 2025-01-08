@@ -26,3 +26,5 @@ The model generates detailed responses based on retrieved document chunks.
 Image Extraction:
 
 Images are extracted from PDFs using PyMuPDF (fitz), enabling visualization of embedded media.
+
+[Virtual Environment files (Too large to push in Github Repository)]
