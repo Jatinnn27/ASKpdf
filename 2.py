@@ -2,7 +2,7 @@ from google.auth.transport.requests import Request
 from google.oauth2 import service_account
 import google.generativeai as genai
 
-key_path = "C:\Users\MAYANK\Downloads\gen-lang-client-0577170796-91d52a4928fe.json"
+key_path = "**************************"
 scopes = ["https://www.googleapis.com/auth/generative-language"]
 
 credentials = service_account.Credentials.from_service_account_file(key_path, scopes=scopes)
