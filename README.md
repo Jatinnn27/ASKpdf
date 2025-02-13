@@ -32,7 +32,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-repo/ask-your-pdf.git
+git clone https://github.com/Jatinnn27/EDD.git
 cd ask-your-pdf
 Install dependencies:
 
